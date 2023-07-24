@@ -154,7 +154,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    GrapheneOSCamera
+    Aperture
     
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim
@@ -440,6 +440,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
+    ApertureOverlaySelene \
+    ApertureQRScannerOverlaySelene \
     CarrierConfigOverlaySelene \
     DialerOverlaySelene \
     FrameworksResOverlaySelene \
