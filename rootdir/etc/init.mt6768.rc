@@ -1250,5 +1250,7 @@ on property:persist.vendor.mtk_aurisys_framework_support=*
 on property:sys.boot_completed=1
     # Restrict permissions to socket file to hide Magisk & co.
     chmod 440 /proc/net/unix
-# enable suspend to RAM
-    write /sys/power/mem_sleep "deep"
+
+    # Report max frequency to unity tasks and miHoYo games
+    write /proc/sys/kernel/sched_lib_name "com.miHoYo.,UnityMain,libunity.so" 
+    write /proc/sys/kernel/sched_lib_mask_force 255
