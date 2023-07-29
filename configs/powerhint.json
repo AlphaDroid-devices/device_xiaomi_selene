@@ -480,7 +480,7 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "ForegroundCpuset",
-      "Duration": 5000,
+      "Duration": 3000,
       "Value": "0-5"
     },
     {
