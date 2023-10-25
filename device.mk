@@ -430,6 +430,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/mediatek
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay-lineage
+
 PRODUCT_PACKAGES += \
     ApertureOverlaySelene \
     ApertureQRScannerOverlaySelene \
