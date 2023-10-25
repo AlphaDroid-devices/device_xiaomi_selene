@@ -1250,3 +1250,5 @@ on property:persist.vendor.mtk_aurisys_framework_support=*
 on property:sys.boot_completed=1
     # Restrict permissions to socket file to hide Magisk & co.
     chmod 440 /proc/net/unix
+# enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
