@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -27,7 +27,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := selene
-PRODUCT_NAME := aosp_selene
+PRODUCT_NAME := superior_selene
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 10
@@ -38,5 +38,9 @@ TARGET_VENDOR_PRODUCT_NAME := selene
 PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="selene-user 13 TP1A.220624.014 V14.0.3.0.TKUEUXM release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT :=
-"Redmi/selene/selene:13/TP1A.220624.014/V14.0.3.0.TKUEUXM:user/release-keys"
+BUILD_FINGERPRINT := "Redmi/selene/selene:13/TP1A.220624.014/V14.0.3.0.TKUEUXM:user/release-keys"
+
+# stuff
+WITH_GAPPS := true
+SUPERIOR_MAINTAINER := Hann (@itseunbinn)
+BUILD_WITH_GAPPS := true
