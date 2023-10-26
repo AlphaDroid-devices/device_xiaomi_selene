@@ -14,9 +14,6 @@ persist.bluetooth.sbc_hd_higher_bitrate=1
 # Brand
 Build.BRAND=MTK
 
-# Cached app compaction
-persist.device_config.activity_manager.use_compaction=true
-
 # Dalvik & Dex
 dalvik.vm.dexopt.secondary=true
 dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5
